@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Variable to store the path to this directory
+# Variable to store the path to this directory (no extra slash, i.e. /home/user/typescript-template NOT /home/user/home/user/typescript-template/ )
 packagePath="ABSOLUTE_PATH_TO_DIR"
 
 # Check if the number of arguments is not equal to 1
