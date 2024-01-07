@@ -7,6 +7,7 @@ const config = [{
         sourcemap: false,
         inlineDynamicImports: true,
     },
+    input: 'src/index.ts',
     plugins: [
         typescript(),
     ],

@@ -45,6 +45,7 @@ npm pkg set 'files[]'='build/index.mjs'
 npm pkg set 'files[]'='build/index.d.ts'
 npm pkg set 'exports[0].import'='./build/index.mjs'
 npm pkg set 'exports[0].require'='./build/index.cjs'
+npm pkg set 'engines.node'='>=18.0.0'
 
 echo "Installing dev dependencies..."
 npm install -D typescript chai @types/chai mocha @types/mocha eslint rollup ts-node
@@ -53,4 +54,6 @@ npm install -D typescript chai @types/chai mocha @types/mocha eslint rollup ts-n
 echo "Installing more dev dependencies..."
 # Some deps have to be installed seperately for some reason, else they throw weird errors
 npm install -D @rollup/plugin-typescript eslint-config-airbnb-base \
-    eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser
+    eslint-plugin-import @typescript-eslint/eslint-plugin @typescript-eslint/parser \
+    rollup-plugin-dts
+
